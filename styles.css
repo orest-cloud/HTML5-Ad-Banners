@@ -6,6 +6,28 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .banners {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banners {
+    padding: 30px;
+  }
+}
+
+.banners__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -15,17 +37,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .banners {
+  .banners__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .banners {
-    padding: 30px;
   }
 }
 
@@ -46,6 +62,35 @@
 @media screen and (min-width: 768px) {
   .banners__vertical-wide {
     margin-left: 30px;
+  }
+}
+
+.banners__button {
+  color: #fff;
+  text-decoration: none;
+  background: #434343;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  cursor: pointer;
+}
+
+.banners__button:hover {
+  background: Black;
+}
+
+@media screen and (min-width: 768px) {
+  .banners__button {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,20 +3,27 @@
 
 
 .banners {
-
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
 
   @include tablet {
- 
-
-    flex-flow: row nowrap;
+    display: block;
   }
 
   @include desktop {
     padding: 30px;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    @include tablet {
+      flex-flow: row nowrap;
+    }
+  
   }
 
   &__vertical {
@@ -36,4 +43,37 @@
       margin-left: 30px;
     }
   }
+
+  &__button {
+    color: #fff;
+    text-decoration: none;
+    background: #434343;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    order: -1;
+    cursor: pointer;
+
+    &:hover {
+      background: Black;
+    }
+
+    @include tablet {
+      order: 0;
+      margin: 0;
+    }
+
+  }
 }
+
+// .body {
+//     display: flex;
+
+//     @include tablet {
+//       display: unset;
+//     }
+
+// }
